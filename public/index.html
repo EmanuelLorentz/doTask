@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu To-do</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <header class="topo">
+        <div>
+          <h1>Meu To-do</h1>
+          <p>As tarefas são salvas em <code>tasks.md</code>.</p>
+        </div>
+        <span id="status" class="status">Carregando…</span>
+      </header>
+
+      <form id="task-form" class="task-form">
+        <label class="sr-only" for="task-input">Nova tarefa</label>
+        <input
+          id="task-input"
+          type="text"
+          placeholder="Escreva uma nova tarefa"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <section id="task-list" aria-live="polite"></section>
+    </main>
+  </body>
+</html>
