@@ -3,7 +3,7 @@ const fs = require("node:fs/promises");
 const path = require("node:path");
 
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 const markdownFile = path.join(__dirname, "tasks.md");
 
 app.use(express.json({ limit: "1mb" }));
